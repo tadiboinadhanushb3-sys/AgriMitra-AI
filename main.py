@@ -9,7 +9,7 @@ from fastapi import FastAPI, HTTPException, UploadFile, File, Form
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
-from .db import init_db
+from db import init_db
 
 app = FastAPI(title="AgriMitra AI", version="1.0.0")
 app.add_middleware(
